@@ -1,6 +1,0 @@
-[ftpservers]
-serverb.lab.example.com
-serverd.lab.example.com
-
-[ftpclients]
-serverc.lab.example.com

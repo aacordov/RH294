@@ -1,9 +1,0 @@
----
-- name: Using the copy module
-  hosts: all
-  remote_user: root
-  tasks:
-    - name: Remove a file from managed hosts
-      file:
-        path: /home/devops/users.txt
-        state: absent
