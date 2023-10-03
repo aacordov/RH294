@@ -1,0 +1,10 @@
+---
+- name: Install packages
+  hosts: dev
+
+  tasks:
+
+    - name: Install the required packages
+      ansible.builtin.dnf:
+        name: "{{ packages }}"
+        state: latest
