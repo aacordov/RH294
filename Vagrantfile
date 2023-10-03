@@ -32,6 +32,22 @@ Vagrant.configure("2") do |config|
 	  v.name = "serverb.lab.example.com"
     end
   end
+  #NODO C
+  config.vm.define "serverc.lab.example.com" do |node|
+    node.vm.hostname = "serverc.lab.example.com"
+    node.vm.network "private_network", ip: "192.168.50.213"
+    node.vm.provider "virtualbox" do |v|
+	  v.name = "serverc.lab.example.com"
+    end    
+  end
+  #NODO D
+  config.vm.define "serverd.lab.example.com" do |node|
+    node.vm.hostname = "serverd.lab.example.com"
+    node.vm.network "private_network", ip: "192.168.50.214"
+    node.vm.provider "virtualbox" do |v|
+	  v.name = "serverd.lab.example.com"
+    end
+  end
     
   #CREACION DE NODO DE CONTROL
   config.vm.define "workstation.lab.example.com" do |controller|
